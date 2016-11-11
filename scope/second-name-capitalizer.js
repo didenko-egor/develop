@@ -1,3 +1,21 @@
+import {isEmpty, isNil} from 'ramda';
+
+/**
+ * Функции для работы со строками
+ * @module string
+ */
+
+/**
+ * Делает пустую строку из `undefined` и `null`
+ * @function
+ * @param   {?string|undefined} value значение
+ * @returns {string}
+ */
+ export const clearValue = value => (value === null || value === undefined) ?
+    '' :
+    value;
+
+
 /**
  * Проверка, если в word пришла не срока
  * @param   {string} word значение
