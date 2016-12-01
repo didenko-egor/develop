@@ -4,7 +4,7 @@
  */
 export default function getHost() {
     const {hostname} = window.location;
-    return hostname === 'portal.dev' ? // локальная разработка
-        'draft.jarvis.su' :
+    return hostname === 'host.dev' ? // локальная разработка
+        'your.dev.host' :
         hostname;
 }
